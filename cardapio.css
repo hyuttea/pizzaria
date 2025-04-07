@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    align-items: right;
+    margin-top: 40px;
+    margin-left: 1030px;
+}
+#pizzas_cardapio {
+    text-align: left;
+}
+#navc a{
+    color: black;
+    margin-right: -250px;
+} 
+
+#navc a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+   
+}
+#navc  {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: -30px;
+    
+}
+
+section {
+    margin-left: 100px;
+    width: 70px;
+    margin-top: 300px;
+}
+
+div {
+    justify-items: left;
+    background-color: darkred;
+    border-radius: 20px;
+    width: 898px;
+    padding: 90px;
+    margin-left: -200px;
+    margin: 20px;
+    margin-top: -270px;
+    font-weight: bold;
+}
+
+#tituloc{
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium';
+    color: #fff;
+}
+
+h4 {
+    font-family: 'system-ui';
+    margin-top: -20px;
+    color: #000000;
+}
+

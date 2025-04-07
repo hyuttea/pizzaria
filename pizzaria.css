@@ -1,0 +1,286 @@
+body {
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 40px;
+}
+
+
+header {
+  color: #FFFF;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+  position: absolute;
+  top: 0%;
+  z-index: 1000;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 150px;
+  height: auto;
+}
+
+nav a {
+  color: #FFFF;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  text-decoration: none;
+  padding: 0px;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 250px;
+  margin-right: -160px;
+}
+
+nav a:hover {
+
+  color: darkred;
+  border-radius: 5px;
+  text-decoration: overline;
+}
+
+h1 {
+  color: darkred;
+  text-align: center;
+
+}
+
+h3 {
+  margin-top: -40px;
+  font-size: 30px;
+  font-family: system-ui;
+
+}
+
+h2 {
+  margin-bottom: -30px;
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  background-color: darkred;
+  margin-top: 30px;
+}
+
+h2 {
+  color: black;
+}
+
+
+p {
+  color: #FFFF;
+  text-align: center;
+  font-family: system-ui;
+  font-weight: bold;
+}
+
+video {
+  width: 100%;
+  opacity: 50%;
+  position: relative;
+  align-items: center;
+}
+
+#logoF {
+  margin-left: 43%;
+  margin-top: 30px;
+}
+
+.video-texto {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  color: #FFFF;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', ;
+  font-weight: bold;
+}
+
+.fa-facebook {
+margin-left: -50px;
+margin-right: -90px;
+}
+
+.fa-instagram {
+  margin-left: -50px;
+}
+.fa-circle-user{
+  margin-left: -50px;
+}
+
+#sobre div {
+  background-color: darkred;
+  border-radius: 20px;
+  width: 100;
+  padding: 90px;
+  margin: 30px;
+  font-weight: bold;
+  margin-top: -0.5px;
+  margin-bottom: -3;
+}
+
+#cardapio {
+  background-image: url("imagens/branco.jpg");
+  padding: 70px;
+}
+
+#cardapio h1 {
+  color: darkred;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: -10px;
+}
+
+#sobre h1 {
+  align-items: center;
+  color: #FFFF;
+  margin: 0;
+  font-weight: bold;
+}
+
+#contatos div {
+  background-color: #FFFF;
+  border-radius: 20px;
+  width: 100;
+  padding: 100px;
+  margin: 30px;
+}
+
+#contatos p {
+  color: black;
+}
+
+#cardapio section {
+  width: 100%;
+  height: 31vh;
+ 
+}
+
+.botao {
+  background-color: darkred;
+  font-family: system-ui;
+  color: #FFFF;
+  width: 200px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-left: 41.8%;
+  border-radius: 8px;
+  border-color: darkred;
+  border-style: solid;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #FFFF;
+  color: darkred;
+}
+
+/* CSS DO CARROSSEL*/
+.carossel-Container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.carossel-Slide {
+  position: relative;
+  display: flex;
+  height: auto;
+  width: 90%;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  right: 0;
+  flex: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-right: 0.2em;
+  height: 25vh;
+  width: 241.6px;
+  width: 19.7385620915%;
+  width: 280px;
+  width: 19.63%;
+  transition: right 1s ease-out;
+  box-sizing: content-box;
+}
+
+.btnCarossel {
+  background: darkred;
+  width: 4%;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border-color: darkred;
+  border-style: solid;
+  border-width: 1;
+}
+
+.btnCarossel:hover {
+  background: #FFFF;
+
+
+  #seta {
+    box-shadow: 2px -2px 0 1px #fff inset;
+    transition: box-shadow 100ms;
+  }
+}
+
+.BtnBack {
+  left: 0;
+
+  #seta {
+    position: absolute;
+    padding: 17%;
+    box-shadow: 2px -2px 0 -1px #fff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: box-shadow 100ms;
+    transform: rotate(45deg);
+  }
+}
+
+.BtnNext {
+  right: 0;
+
+  #seta {
+    position: absolute;
+    padding: 17%;
+    box-shadow: 2px -2px 0 -1px #fff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: box-shadow 100ms;
+    transform: rotate(225deg);
+  }
+}
