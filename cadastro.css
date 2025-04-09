@@ -11,12 +11,13 @@ div {
     margin-top: -9px;
     margin-bottom: -20px;
   }
+ 
 
   #formulario{
     background-color: rgb(255, 255, 255);
     width: 80px;
-    padding: 150px;
-    margin-top: -530px;
+    padding: 130px;
+    margin-top: -559px;
     margin-left: 800px;
     border-radius: 20px;
    justify-items: center;
@@ -26,19 +27,37 @@ div {
     border-radius: 5px;
     padding: 8px;
     width: 200px;
-    margin-bottom: 10px;
+    margin: 0;
+    border-style:double;
+    border-color: rgb(43, 43, 43);
   }
 
   #senha{
     border-radius: 5px;
     padding: 8px;
     width: 200px;
-   
+    margin: 0;
+    border-style:double;
+   border-color: rgb(43, 43, 43);
   }
 
   #botao{
     border-radius: 5px;
-    padding: 6px;
-   width: 216px;
-   
+    padding: 8px;
+    width: 216px;
+    border-style:double;
+    border-color: rgb(43, 43, 43);
   }
+  #botao:hover{
+    background-color: rgb(233, 230, 230);
+  }
+
+hr{
+  width: 180px;
+  margin-left: -50px;
+  margin-top: -10px;
+}
+
+h1{
+  font-family: system-ui;
+}
