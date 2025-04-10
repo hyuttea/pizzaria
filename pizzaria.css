@@ -115,14 +115,15 @@ video {
 }
 
 .fa-facebook {
-margin-left: -50px;
-margin-right: -90px;
+  margin-left: -50px;
+  margin-right: -90px;
 }
 
 .fa-instagram {
   margin-left: -50px;
 }
-.fa-circle-user{
+
+.fa-circle-user {
   margin-left: -50px;
 }
 
@@ -171,7 +172,7 @@ margin-right: -90px;
 #cardapio section {
   width: 100%;
   height: 31vh;
- 
+
 }
 
 .botao {

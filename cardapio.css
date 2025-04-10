@@ -6,29 +6,33 @@ body {
     padding: 0;
 }
 
-.logo{
+.logo {
     align-items: right;
-    margin-top: 40px;
+    margin-top: 33px;
     margin-left: 1030px;
+
 }
+
 #pizzas_cardapio {
     text-align: left;
 }
-#navc a{
+
+#navc a {
     color: black;
     margin-right: -250px;
-} 
+}
 
-#navc a:hover{
+#navc a:hover {
     color: #ffffff;
     text-decoration: underline;
-   
+
 }
-#navc  {
+
+#navc {
     text-align: left;
     margin-top: 30px;
     margin-left: -30px;
-    
+
 }
 
 section {
@@ -49,7 +53,7 @@ div {
     font-weight: bold;
 }
 
-#tituloc{
+#tituloc {
     color: #000000;
 }
 
@@ -63,4 +67,3 @@ h4 {
     margin-top: -20px;
     color: #000000;
 }
-
