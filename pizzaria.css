@@ -451,9 +451,9 @@ video {
 
   nav a {
     margin-left: clamp(2px, 6vw, 8vw);
-    margin-right: clamp(-5vw, -3vw, -4vw);
+    margin-right: clamp(-5vw, -3vw, -9vw);
     font-size: clamp(10px, 1.4vw, 12px);
-    padding: 5px 8px;
+    padding: 1px 4px;
   }
 
   .video-texto {
