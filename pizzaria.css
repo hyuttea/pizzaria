@@ -446,8 +446,7 @@ video {
 
   nav ul {
     flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-right: 5px;
+    justify-content:center;
   }
 
   nav a {
@@ -467,7 +466,8 @@ video {
   }
 
   .video-texto h1 {
-    font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+    font-size: clamp(1.8rem, 5.5vw, 2.2rem);
+    margin-bottom: -25px;
   }
 
   .video-texto h3 {
@@ -531,7 +531,7 @@ video {
   }
 
   .fa-facebook, .fa-instagram, .fa-circle-user {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -5px;
+    margin-right: -8px;
   }
 }
