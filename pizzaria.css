@@ -4,7 +4,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 html {
@@ -12,57 +12,64 @@ html {
   scroll-padding: 40px;
 }
 
-
 header {
   color: #FFFF;
-  text-align: center;
+  text-align: right;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow';
   position: absolute;
-  top: 0%;
+  top: 0;
   z-index: 1000;
-  padding: 0px;
+  padding: 10px 0;
   width: 100%;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .logo {
   position: absolute;
-  top: 0;
-  left: 20px;
-  width: 150px;
+  top: 10px;
+  left: clamp(10px, 3vw, 15px);
+  width: clamp(90px, 10vw, 130px);
+  max-width: 140px;
   height: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: -26%;
 }
 
 nav a {
   color: #FFFF;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
+  font-size: clamp(18px, 1.8vw, 15px);
   text-decoration: none;
-  padding: 0px;
-  align-items: center;
+  padding: 8px 20px;
   font-weight: bold;
-  margin-left: 250px;
-  margin-right: -160px;
+  margin-left: clamp(5px, 10vw, 12vw);
+  margin-right: clamp(-8vw, -10vw, -6vw);
 }
 
 nav a:hover {
-
   color: darkred;
   border-radius: 5px;
   text-decoration: overline;
 }
 
 h1 {
+  margin-bottom: -5px;
   color: darkred;
   text-align: center;
-
 }
 
 h3 {
-  margin-top: -40px;
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);
   font-family: system-ui;
-
 }
 
 h2 {
@@ -82,12 +89,12 @@ h2 {
   color: black;
 }
 
-
 p {
   color: #FFFF;
   text-align: center;
   font-family: system-ui;
   font-weight: bold;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 video {
@@ -97,26 +104,52 @@ video {
   align-items: center;
 }
 
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 #logoF {
-  margin-left: 43%;
-  margin-top: 30px;
+  display: block;
+  margin: 30px auto 0;
+  width: clamp(140px, 20vw, 180px);
+  max-width: 200px;
+  height: auto;
+  left: 0;
+  right: 0;
 }
 
 .video-texto {
   position: absolute;
-  top: 50%;
+  top: clamp(40%, 35%, 40%);
   left: 30%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   text-align: right;
   color: #FFFF;
-  font-size: 2rem;
-  font-family: 'Franklin Gothic Medium', ;
+  font-size: clamp(1.6rem, 4.5vw, 2.8rem);
+  font-family: 'Franklin Gothic Medium';
   font-weight: bold;
+  max-width: clamp(70%, 80%, 85%);
+  white-space: normal;
+  line-height: 1.3;
+}
+
+.video-texto h1 {
+  color: darkred;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.video-texto h3 {
+  color: rgb(255, 255, 255);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  margin-top: clamp(-18px, -2vw, -15px);
 }
 
 .fa-facebook {
   margin-left: -50px;
-  margin-right: -90px;
 }
 
 .fa-instagram {
@@ -130,23 +163,22 @@ video {
 #sobre div {
   background-color: darkred;
   border-radius: 20px;
-  width: 100;
-  padding: 90px;
+  padding: clamp(20px, 5vw, 90px);
   margin: 30px;
   font-weight: bold;
-  margin-top: -0.5px;
-  margin-bottom: -3;
 }
 
 #cardapio {
   background-image: url("imagens/branco.jpg");
-  padding: 70px;
+  background-size: cover;
+  padding: clamp(20px, 5vw, 70px);
+  text-align: center;
 }
 
 #cardapio h1 {
   color: darkred;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: clamp(24px, 5vw, 36px);
   margin-top: -10px;
 }
 
@@ -157,45 +189,43 @@ video {
   font-weight: bold;
 }
 
-#contatos div {
-  background-color: #FFFF;
-  border-radius: 20px;
-  width: 100;
-  padding: 100px;
-  margin: 30px;
-}
-
 #contatos p {
   color: black;
 }
 
-#cardapio section {
-  width: 100%;
-  height: 31vh;
-
+#contatos img {
+  max-width: 100%;
+  height: auto;
 }
 
-.botao {
+#cardapio section {
+  width: 100%;
+  height: auto;
+  min-height: 31vh;
+}
+
+.botao, a.botao, #cardapio a.botao {
   background-color: darkred;
   font-family: system-ui;
   color: #FFFF;
-  width: 200px;
+  width: clamp(150px, 20vw, 200px);
   padding: 20px;
   margin-top: 15px;
-  margin-left: 41.8%;
+  display: inline-block;
   border-radius: 8px;
-  border-color: darkred;
-  border-style: solid;
+  border: 2px solid darkred;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.botao:hover {
+.botao:hover, a.botao:hover, #cardapio a.botao:hover {
   background-color: #FFFF;
   color: darkred;
+  text-decoration: none;
 }
 
-/* CSS DO CARROSSEL*/
+/* CSS DO CARROSSEL */
 .carossel-Container {
   position: relative;
   width: 100%;
@@ -212,20 +242,43 @@ video {
   margin: 0 auto;
 }
 
-.item {
+.carossel-Slide .item {
   position: relative;
   right: 0;
   flex: none;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin-right: 0.2em;
-  height: 25vh;
-  width: 241.6px;
-  width: 19.7385620915%;
-  width: 280px;
-  width: 19.63%;
+  min-height: clamp(25vh, 30vh, 35vh);
+  width: clamp(200px, 19.63%, 280px);
   transition: right 1s ease-out;
   box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: clamp(10px, 2.5vw, 12px);
+}
+
+.carossel-Slide .item img {
+  max-width: 100%;
+  max-height: clamp(55%, 65%, 70%);
+  height: auto;
+  object-fit: contain;
+  margin-top: clamp(12px, 3vw, 15px);
+  margin-bottom: clamp(5px, 1.5vw, 8px);
+}
+
+.carossel-Slide .item div {
+  font-family: system-ui;
+  font-weight: bold;
+  color: darkred;
+  font-size: clamp(12px, 2.3vw, 16px);
+  margin-top: clamp(5px, 1.5vw, 8px);
+  margin-bottom: clamp(8px, 2vw, 10px);
+  width: 100%;
+  text-align: center;
 }
 
 .btnCarossel {
@@ -246,42 +299,239 @@ video {
 
 .btnCarossel:hover {
   background: #FFFF;
+}
 
-
-  #seta {
-    box-shadow: 2px -2px 0 1px #fff inset;
-    transition: box-shadow 100ms;
-  }
+.btnCarossel:hover #seta {
+  box-shadow: 2px -2px 0 1px #fff inset;
+  transition: box-shadow 100ms;
 }
 
 .BtnBack {
   left: 0;
+}
 
-  #seta {
-    position: absolute;
-    padding: 17%;
-    box-shadow: 2px -2px 0 -1px #fff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: box-shadow 100ms;
-    transform: rotate(45deg);
-  }
+.BtnBack #seta {
+  position: absolute;
+  padding: 17%;
+  box-shadow: 2px -2px 0 -1px #fff inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: box-shadow 100ms;
+  transform: rotate(45deg);
 }
 
 .BtnNext {
   right: 0;
+}
 
-  #seta {
-    position: absolute;
-    padding: 17%;
-    box-shadow: 2px -2px 0 -1px #fff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: box-shadow 100ms;
-    transform: rotate(225deg);
+.BtnNext #seta {
+  position: absolute;
+  padding: 17%;
+  box-shadow: 2px -2px 0 -1px #fff inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: box-shadow 100ms;
+  transform: rotate(225deg);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 8px 0;
+  }
+
+  .logo {
+    width: clamp(70px, 12vw, 90px);
+    max-width: 100px;
+    left: clamp(8px, 2vw, 12px);
+    top: 8px;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+
+  nav a {
+    margin-left: clamp(3px, 8vw, 10vw);
+    margin-right: clamp(-6vw, -4vw, -5vw);
+    font-size: clamp(11px, 1.6vw, 13px);
+    padding: 6px 10px;
+  }
+
+  .video-texto {
+    top: clamp(20%, 25%, 30%);
+    left: 40%;
+    transform: translate(-50%, -20%);
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    max-width: clamp(75%, 85%, 90%);
+    line-height: 1.4;
+  }
+
+  .video-texto h1 {
+    font-size: clamp(1.7rem, 5vw, 2.8rem);
+  }
+
+  .video-texto h3 {
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    margin-top: clamp(-15px, -1.5vw, -12px);
+  }
+
+  #sobre div {
+    padding: clamp(15px, 4vw, 50px);
+    margin: 15px;
+  }
+
+  #cardapio {
+    padding: clamp(15px, 4vw, 50px);
+    text-align: center;
+  }
+
+  .carossel-Slide .item {
+    min-height: clamp(20vh, 25vh, 30vh);
+    width: clamp(150px, 30%, 200px);
+    padding: clamp(8px, 2vw, 10px);
+  }
+
+  .carossel-Slide .item img {
+    max-height: clamp(50%, 60%, 65%);
+    margin-top: clamp(10px, 2.5vw, 12px);
+    margin-bottom: clamp(4px, 1.2vw, 6px);
+  }
+
+  .carossel-Slide .item div {
+    font-size: clamp(11px, 2.1vw, 15px);
+    margin-top: clamp(4px, 1.2vw, 6px);
+    margin-bottom: clamp(6px, 1.8vw, 8px);
+  }
+
+  .botao, a.botao, #cardapio a.botao {
+    width: clamp(120px, 25vw, 150px);
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFF;
+  }
+
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #logoF {
+    width: clamp(120px, 22vw, 150px);
+    max-width: 160px;
+    margin: 30px auto 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 5px 0;
+  }
+
+  .logo {
+    width: clamp(50px, 15vw, 70px);
+    max-width: 80px;
+    left: clamp(5px, 1.5vw, 10px);
+    top: 5px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+
+  nav a {
+    margin-left: clamp(2px, 6vw, 8vw);
+    margin-right: clamp(-5vw, -3vw, -4vw);
+    font-size: clamp(10px, 1.4vw, 12px);
+    padding: 5px 8px;
+  }
+
+  .video-texto {
+    top: clamp(15%, 20%, 25%);
+    left: 40%;
+    transform: translate(-50%, -15%);
+    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+    max-width: clamp(80%, 90%, 95%);
+    line-height: 1.5;
+  }
+
+  .video-texto h1 {
+    font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+  }
+
+  .video-texto h3 {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    margin-top: clamp(-12px, -1.2vw, -10px);
+  }
+
+  #sobre div {
+    padding: clamp(10px, 3vw, 30px);
+    margin: 10px;
+  }
+
+  #cardapio {
+    padding: clamp(10px, 3vw, 30px);
+    text-align: center;
+  }
+
+  .carossel-Slide .item {
+    min-height: clamp(16vh, 20vh, 25vh);
+    width: clamp(120px, 45%, 150px);
+    padding: clamp(6px, 1.8vw, 8px);
+  }
+
+  .carossel-Slide .item img {
+    max-height: clamp(45%, 55%, 60%);
+    margin-top: clamp(8px, 2vw, 10px);
+    margin-bottom: clamp(3px, 1vw, 5px);
+  }
+
+  .carossel-Slide .item div {
+    font-size: clamp(10px, 1.9vw, 14px);
+    margin-top: clamp(3px, 1vw, 5px);
+    margin-bottom: clamp(5px, 1.5vw, 7px);
+  }
+
+  .btnCarossel {
+    width: 6%;
+  }
+
+  .botao, a.botao, #cardapio a.botao {
+    width: clamp(100px, 30vw, 120px);
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFF;
+  }
+
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #logoF {
+    width: clamp(100px, 25vw, 130px);
+    max-width: 140px;
+    margin: 30px auto 0;
+    left: 0;
+    right: 0;
+  }
+
+  .fa-facebook, .fa-instagram, .fa-circle-user {
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
