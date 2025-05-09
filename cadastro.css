@@ -87,40 +87,39 @@ h1 {
   text-decoration: underline darkred;
 }
 
-/* Media Query para telas até 768px (tablets e dispositivos médios) */
 @media (max-width: 768px) {
   img {
-    width: 150px; /* Reduz o tamanho da imagem */
+    width: 150px; 
     margin-top: -60px;
     margin-bottom: 15px;
   }
 
   div {
-    padding: 298px; /* Reduz o padding */
+    padding: 298px; 
   }
 
   #formulario {
     width: 60px;
-    padding: 100px; /* Reduz o padding */
-    margin-top: -520px; /* Ajusta a posição vertical */
-    margin-left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajuste fino para centralização */
+    padding: 100px; 
+    margin-top: -520px; 
+    margin-left: 50%; 
+    transform: translateX(-50%); 
     margin-bottom: -800px;
   }
 
   #mail,
   #senha,
   #botao {
-    width: 180px; /* Reduz a largura dos inputs e botão */
+    width: 180px; 
   }
 
   hr {
-    width: 150px; /* Reduz a largura da linha */
+    width: 150px; 
     margin-left: -40px;
   }
 
   h1 {
-    font-size: 1.5em; /* Reduz o tamanho da fonte */
+    font-size: 1.5em;
     margin-top: -20px;
   }
 
@@ -134,57 +133,57 @@ h1 {
   }
 }
 
-/* Media Query para telas até 480px (celulares) */
+
 @media (max-width: 480px) {
   img {
-    width: 120px; /* Reduz ainda mais o tamanho da imagem */
+    width: 120px; 
     margin-top: -40px;
     margin-bottom: 10px;
   }
 
   div {
-    padding: 10px; /* Reduz o padding ainda mais */
+    padding: 10px; 
     width: 80px;
     margin-left: -80px;
   }
 
   #formulario {
     width: 50px;
-    padding: 80px; /* Reduz o padding */
-    margin-top: -300px; /* Ajusta a posição */
-    margin-left: 50%; /* Centraliza */
+    padding: 80px; 
+    margin-top: -300px; 
+    margin-left: 50%; 
     transform: translateX(-50%);
     margin-bottom: -600px;
-    border-radius: 15px; /* Ajusta o raio da borda */
+    border-radius: 15px; 
   }
 
   #mail, #senha, #botao {
-    width: 150px; /* Reduz a largura dos inputs e botão */
-    padding: 6px; /* Reduz o padding interno */
+    width: 150px; 
+    padding: 6px; 
   }
 
   #botao {
-    width: 162px; /* Ajusta o botão para corresponder aos inputs */
+    width: 162px; 
   }
 
   hr {
-    width: 120px; /* Reduz a largura da linha */
+    width: 120px; 
     margin-left: -30px;
   }
 
   h1 {
-    font-size: 1.2em; /* Reduz ainda mais a fonte */
+    font-size: 1.2em; 
     margin-top: -15px;
   }
 
   #esqueceusenha {
     margin-left: -30px;
-    font-size: 0.9em; /* Reduz a fonte */
+    font-size: 0.9em; 
   }
 
   #cadastrese {
     margin-left: 10px;
     margin-right: -30px;
-    font-size: 0.9em; /* Reduz a fonte */
+    font-size: 0.9em; 
   }
 }
