@@ -84,6 +84,7 @@ h4 {
         margin-right: 0;
         display: block;
         margin-bottom: 10px;
+        
     }
 
     section {
@@ -102,7 +103,7 @@ h4 {
     }
 
     div {
-        width: 95%;
+        width: 75%;
         padding: 30px;
     }
 
@@ -113,6 +114,9 @@ h4 {
 
     #navc a {
         font-size: 16px;
+        margin-top: 80px;
+        margin-left: 170px;
+        margin-right: -170px;
     }
 
     section {
