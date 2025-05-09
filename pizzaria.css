@@ -458,6 +458,7 @@ video {
   .video-texto {
     top: clamp(15%, 20%, 25%);
     left: 40%;
+    bottom: 30%;
     transform: translate(-50%, -15%);
     font-size: clamp(1.2rem, 3.5vw, 1.8rem);
     max-width: clamp(80%, 90%, 95%);
@@ -472,12 +473,18 @@ video {
   .video-texto h3 {
     font-size: clamp(1rem, 3vw, 1.4rem);
     margin-top: clamp(-12px, -1.2vw, -10px);
+    
   }
 
   #sobre div {
-    padding: clamp(10px, 3vw, 30px);
+    padding: clamp(2px, 3vw, 30px);
     margin: 10px;
     margin-bottom: 30px;
+  }
+
+  #lorem{
+    font-size: 12px;
+   
   }
 
   #cardapio {
@@ -488,7 +495,8 @@ video {
   .carossel-Slide .item {
     min-height: clamp(16vh, 20vh, 25vh);
     width: clamp(120px, 45%, 150px);
-    padding: clamp(6px, 1.8vw, 8px);
+    padding: clamp(6px, 1.8vw, 10px);
+    margin-top: 0;
   }
 
   .carossel-Slide .item img {
@@ -505,6 +513,7 @@ video {
 
   .btnCarossel {
     width: 6%;
+    
   }
 
   .botao, a.botao, #cardapio a.botao {
