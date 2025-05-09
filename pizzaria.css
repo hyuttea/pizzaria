@@ -458,7 +458,7 @@ video {
   .video-texto {
     top: clamp(15%, 20%, 25%);
     left: 40%;
-    bottom: 30%;
+    bottom: 20%;
     transform: translate(-50%, -15%);
     font-size: clamp(1.2rem, 3.5vw, 1.8rem);
     max-width: clamp(80%, 90%, 95%);
