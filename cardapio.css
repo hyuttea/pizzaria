@@ -7,32 +7,32 @@ body {
 }
 
 .logo {
-    align-items: right;
+    float: right;
     margin-top: 33px;
-    margin-left: 1030px;
-
+    margin-right: 50px;
 }
 
-#pizzas_cardapio {
+
+
+#navc {
     text-align: left;
+    margin-top: 30px;
+    margin-left: 220px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #navc a {
     color: black;
-    margin-right: -250px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-right: -230px
 }
 
 #navc a:hover {
     color: #ffffff;
     text-decoration: underline;
-
-}
-
-#navc {
-    text-align: left;
-    margin-top: 30px;
-    margin-left: -30px;
-
 }
 
 section {
@@ -63,7 +63,60 @@ h3 {
 }
 
 h4 {
-    font-family: 'system-ui';
+    font-family: system-ui;
     margin-top: -20px;
     color: #000000;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-right: 20px;
+        max-width: 100%;
+    }
+
+    div {
+        width: 90%;
+        margin: 20px auto;
+        padding: 40px;
+    }
+
+    #navc a {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin-left: 20px;
+        width: auto;
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 765px) {
+    .logo {
+        display: block;
+        margin: 20px auto;
+        float: none;
+        text-align: center;
+    }
+
+    div {
+        width: 95%;
+        padding: 30px;
+    }
+
+    #navc {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #navc a {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 100px 10px 0 10px;
+        width: auto;
+    }
 }

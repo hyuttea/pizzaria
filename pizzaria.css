@@ -338,7 +338,6 @@ video {
   transform: rotate(225deg);
 }
 
-/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
   header {
     padding: 8px 0;
@@ -478,6 +477,7 @@ video {
   #sobre div {
     padding: clamp(10px, 3vw, 30px);
     margin: 10px;
+    margin-bottom: 30px;
   }
 
   #cardapio {
@@ -492,7 +492,7 @@ video {
   }
 
   .carossel-Slide .item img {
-    max-height: clamp(45%, 55%, 60%);
+    max-height: clamp(45%, 95%, 60%);
     margin-top: clamp(8px, 2vw, 10px);
     margin-bottom: clamp(3px, 1vw, 5px);
   }
@@ -512,24 +512,13 @@ video {
     padding: 15px;
     display: inline-block;
     text-decoration: none;
-    color: #FFFF;
+
   }
 
-  .logo-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  h2{
+    margin-top: -20px;
   }
-
-  #logoF {
-    width: clamp(100px, 25vw, 130px);
-    max-width: 140px;
-    margin: 30px auto 0;
-    left: 0;
-    right: 0;
-  }
-
+  
   .fa-facebook, .fa-instagram, .fa-circle-user {
     margin-left: -5px;
     margin-right: -8px;
