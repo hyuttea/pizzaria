@@ -137,6 +137,7 @@ h1 {
 @media (max-width: 480px) {
   body{
     width: 480px;
+    margin-bottom: -900px;
   }
 
   img {
@@ -147,7 +148,8 @@ h1 {
 
   div {
     padding: 350px; 
-    margin-bottom: 0;
+    
+    
   }
 
   #formulario {
