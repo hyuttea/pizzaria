@@ -136,8 +136,8 @@ h1 {
 
 @media (max-width: 480px) {
   body{
-    width: 480px;
-    margin-bottom: -900px;
+  width: 100vw;
+  height: 100vh;
   }
 
   img {
@@ -148,14 +148,16 @@ h1 {
 
   div {
     padding: 350px; 
-    
-    
+    margin-top: -150px;
   }
 
+  #vermelho{
+    height: 18vh;
+  }
   #formulario {
     width: 60px;
     padding: 100px; 
-    margin-top: -520px; 
+    margin-top: -590px; 
     margin-left: 50%; 
     transform: translateX(-50%); 
     margin-bottom: -800px;
