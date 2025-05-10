@@ -134,3 +134,48 @@ h1 {
 }
 
 
+@media (max-width: 480px) {
+  img {
+    width: 150px; 
+    margin-top: -60px;
+    margin-bottom: 15px;
+  }
+
+  div {
+    padding: 298px; 
+  }
+
+  #formulario {
+    width: 60px;
+    padding: 100px; 
+    margin-top: -520px; 
+    margin-left: 50%; 
+    transform: translateX(-50%); 
+    margin-bottom: -800px;
+  }
+
+  #mail,
+  #senha,
+  #botao {
+    width: 180px; 
+  }
+
+  hr {
+    width: 150px; 
+    margin-left: -40px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: -20px;
+  }
+
+  #esqueceusenha {
+    margin-left: -50px;
+  }
+
+  #cadastrese {
+    margin-left: 60px;
+    margin-right: -60px;
+  }
+}
