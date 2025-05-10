@@ -165,6 +165,7 @@ video {
   border-radius: 20px;
   padding: clamp(20px, 5vw, 90px);
   margin: 30px;
+  margin-bottom: 50px;
   font-weight: bold;
 }
 
@@ -173,6 +174,7 @@ video {
   background-size: cover;
   padding: clamp(20px, 5vw, 70px);
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #cardapio h1 {
@@ -221,8 +223,7 @@ a.botao,
   text-decoration: none;
 }
 
-.botao:hover,
-a.botao:hover,
+.botao:hover, a.botao:hover,
 #cardapio a.botao:hover {
   background-color: #FFFF;
   color: darkred;
@@ -392,6 +393,7 @@ a.botao:hover,
   #cardapio {
     padding: clamp(15px, 4vw, 50px);
     text-align: center;
+    margin-bottom: 35px;
   }
 
   .carossel-Slide .item {
