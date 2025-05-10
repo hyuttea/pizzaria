@@ -4,7 +4,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 html {
@@ -169,7 +169,7 @@ video {
 }
 
 #cardapio {
-  background-image: url("imagens/branco.jpg");
+  background-image: url("../imagens/branco.jpg");
   background-size: cover;
   padding: clamp(20px, 5vw, 70px);
   text-align: center;
@@ -204,7 +204,9 @@ video {
   min-height: 31vh;
 }
 
-.botao, a.botao, #cardapio a.botao {
+.botao,
+a.botao,
+#cardapio a.botao {
   background-color: darkred;
   font-family: system-ui;
   color: #FFFF;
@@ -219,7 +221,9 @@ video {
   text-decoration: none;
 }
 
-.botao:hover, a.botao:hover, #cardapio a.botao:hover {
+.botao:hover,
+a.botao:hover,
+#cardapio a.botao:hover {
   background-color: #FFFF;
   color: darkred;
   text-decoration: none;
@@ -408,7 +412,9 @@ video {
     margin-bottom: clamp(6px, 1.8vw, 8px);
   }
 
-  .botao, a.botao, #cardapio a.botao {
+  .botao,
+  a.botao,
+  #cardapio a.botao {
     width: clamp(120px, 25vw, 150px);
     display: inline-block;
     text-decoration: none;
@@ -445,7 +451,7 @@ video {
 
   nav ul {
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
   }
 
   nav a {
@@ -473,7 +479,7 @@ video {
   .video-texto h3 {
     font-size: clamp(1rem, 3vw, 1.4rem);
     margin-top: clamp(-12px, -1.2vw, -10px);
-    
+
   }
 
   #sobre div {
@@ -482,9 +488,9 @@ video {
     margin-bottom: 30px;
   }
 
-  #lorem{
+  #lorem {
     font-size: 12px;
-   
+
   }
 
   #cardapio {
@@ -513,10 +519,12 @@ video {
 
   .btnCarossel {
     width: 6%;
-    
+
   }
 
-  .botao, a.botao, #cardapio a.botao {
+  .botao,
+  a.botao,
+  #cardapio a.botao {
     width: clamp(100px, 30vw, 120px);
     padding: 15px;
     display: inline-block;
@@ -524,11 +532,13 @@ video {
 
   }
 
-  h2{
+  h2 {
     margin-top: -20px;
   }
-  
-  .fa-facebook, .fa-instagram, .fa-circle-user {
+
+  .fa-facebook,
+  .fa-instagram,
+  .fa-circle-user {
     margin-left: -5px;
     margin-right: -8px;
   }

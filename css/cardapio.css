@@ -83,7 +83,7 @@ h4 {
         margin-right: 0;
         display: block;
         margin-bottom: 10px;
-        
+
     }
 
     section {
@@ -101,9 +101,10 @@ h4 {
         text-align: center;
     }
 
-    h4{
+    h4 {
         font-size: 14px;
     }
+
     div {
         margin-top: -40px;
         width: 75%;

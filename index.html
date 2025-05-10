@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="" type="image/x-icon">
-  <link rel="stylesheet" href="pizzaria.css">
   <link rel="shortcut icon" href="imagens/Black_and_Red_Pizza_House_Food_Place_Logo__1_-removebg-preview.png"
     type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/pizzaria.css">
   <title>Fred's Pizza</title>
 </head>
 
@@ -35,8 +35,6 @@
           <a href="https://www.instagram.com/" target=”_blank”><i class="fa fa-instagram"></i></a>
           <a href="https://www.facebook.com/" target=”_blank”><i class="fa fa-facebook"></i></a>
         </ul>
-
-
       </nav>
     </header>
 
@@ -77,7 +75,6 @@
             animi maiores id maxime inventore necessitatibus fuga ac
             cusamus eligendi. Sapiente ipsum perferendis distinctio
           </p>
-
         </div>
       </section>
 
@@ -112,7 +109,6 @@
                 Portuguesa<img src="imagens/portuguesa.png" alt=""></div>
               <div class="item" style="font-family: system-ui; text-align: center;font-weight:bold; color: darkred;">
                 Carbonara<img src="imagens/carbonara.png" alt=""></div>
-
             </div>
 
             <div class="btnCarossel BtnNext">
@@ -124,12 +120,11 @@
           </div>
         </section>
 
-
     </main>
 
     <footer id="contatos">
-      <a href="index.html"><img src="imagens/logo fred - versao preto.png"
-          alt="Logo da Pizzaria" class="logo" width="180px" id="logoF"></a>
+      <a href="index.html"><img src="imagens/logo fred - versao preto.png" alt="Logo da Pizzaria" class="logo"
+          width="180px" id="logoF"></a>
       <br>
       <br>
       <br>
@@ -151,43 +146,8 @@
       </p>
     </footer>
 
-    
-    <script>
-      let carosseis = document.getElementsByClassName('carossel-Container')
+    <script src="script.js"></script>
 
-      for (let i = 0; i < carosseis.length; i++) {
-        let carossel = carosseis[i]
-        let btnBack = carossel.getElementsByClassName('BtnBack')[0]
-        let btnNext = carossel.getElementsByClassName('BtnNext')[0]
-
-        let itens = carossel.getElementsByClassName('item')
-        let posicaoAnterior = 0
-        let mover = posicaoAnterior + 100
-
-        btnNext.addEventListener('click', () => {
-          mover = posicaoAnterior + 100
-
-          for (let c = 0; c < itens.length; c++) {
-
-            itens[c].style.right = mover + '%'
-
-            posicaoAnterior = mover
-          }
-        })
-
-        btnBack.addEventListener('click', () => {
-          mover = posicaoAnterior - 100
-
-          for (let c = 0; c < itens.length; c++) {
-
-            itens[c].style.right = mover + '%'
-
-            posicaoAnterior = mover
-          }
-
-        })
-      }
-    </script>
 </body>
 
 </html>
