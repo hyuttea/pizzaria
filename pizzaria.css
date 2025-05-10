@@ -237,7 +237,7 @@ video {
   position: relative;
   display: flex;
   height: auto;
-  width: 90%;
+  width: 95%;
   overflow: visible;
   margin: 0 auto;
 }
@@ -250,7 +250,7 @@ video {
   border-radius: 10px;
   margin-right: 0.2em;
   min-height: clamp(25vh, 30vh, 35vh);
-  width: clamp(200px, 19.63%, 280px);
+  width: clamp(200px, 22.63%, 280px);
   transition: right 1s ease-out;
   box-sizing: content-box;
   display: flex;
