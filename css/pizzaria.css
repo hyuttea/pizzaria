@@ -284,6 +284,7 @@ a.botao,
   margin-bottom: clamp(8px, 2vw, 10px);
   width: 100%;
   text-align: center;
+  
 }
 
 .btnCarossel {
